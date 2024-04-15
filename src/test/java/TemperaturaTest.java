@@ -23,6 +23,12 @@ public class TemperaturaTest {
         assertEquals(3, Temperatura.diasAcimaDaMedia(new int[] { 2, 2, 3, 4, 5, 6, 1 }));
     }
 
+    @Test
+    @DisplayName("Deve retornar 4 se quatro dias forem acima da média")
+    void deveRetornar4SeQuatroDiasForemAcimaDaMedia(){
+        assertEquals(4, Temperatura.diasAcimaDaMedia(new int[] { 2, 2, 2, 3, 3, 3, 3 }));
+    }
+
 
 }
 
