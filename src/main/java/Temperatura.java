@@ -1,4 +1,5 @@
 public class Temperatura {
+
     public static Object diasAcimaDaMedia(int[] temperaturas) {
         if (temperaturas.length != 7) {
             return "Erro";
@@ -6,7 +7,7 @@ public class Temperatura {
 
         int soma = 0;
         for (int temperatura : temperaturas) {
-            if (temperatura < -100 || temperatura > 100) {
+            if (temperatura < 1 || temperatura > 100) {
                 return "Erro";
             }
             soma += temperatura;
