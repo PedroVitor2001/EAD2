@@ -5,7 +5,11 @@ import org.junit.jupiter.api.Test;
 public class TemperaturaTest {
 
 
-
+    @Test
+    @DisplayName("Deve retornar 0 se nenhum dia for acima da média")
+    void deveRetornar0SeNenhumDiaForAcimaDaMedia(){
+        assertEquals(0, Temperatura.diasAcimaDaMedia(new int[] { 2, 2, 2, 2, 2, 2, 2 }));
+    }
     @Test
     @DisplayName("Deve retornar 1 se um dia for acima da média")
     void DeveRetornar1SeUmDiaForAcimaDaMedia(){
