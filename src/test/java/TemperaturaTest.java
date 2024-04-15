@@ -45,6 +45,10 @@ public class TemperaturaTest {
         assertEquals(6, Temperatura.diasAcimaDaMedia(new int[] { 2, 3, 3, 3, 3, 3, 3 }));
     }
 
-
+    @Test
+    @DisplayName("Deve retornar erro se for uma temperatura inválida positiva")
+    void DeveRetornarErroSeForUmaTemperaturaInvalidaPositiva(){
+        assertEquals("Erro", Temperatura.diasAcimaDaMedia(new int[] { 2, 2, 2, 2, 2, 2, 101 }));
+    }
 }
 
